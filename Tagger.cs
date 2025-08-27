@@ -27,10 +27,23 @@ namespace Ony.SyntaxLume
 				["abstract"] = registry.GetClassificationType("modifier - abstract"),
 				["sealed"] = registry.GetClassificationType("modifier - sealed"),
 				["override"] = registry.GetClassificationType("modifier - override"),
-				["static"] = registry.GetClassificationType("modifier - static")
+				["static"] = registry.GetClassificationType("modifier - static"),
+                ["if"] = registry.GetClassificationType("control flow - if"),
+                ["else"] = registry.GetClassificationType("control flow - else"),
+                ["while"] = registry.GetClassificationType("control flow - while"),
+                ["do"] = registry.GetClassificationType("control flow - do"),
+                ["for"] = registry.GetClassificationType("control flow - for"),
+                ["foreach"] = registry.GetClassificationType("control flow - foreach"),
+                ["switch"] = registry.GetClassificationType("control flow - switch"),
+                ["break"] = registry.GetClassificationType("control flow - break"),
+                ["continue"] = registry.GetClassificationType("control flow - continue"),
+                ["return"] = registry.GetClassificationType("control flow - return"),
+                ["goto"] = registry.GetClassificationType("control flow - goto"),
+                ["throw"] = registry.GetClassificationType("control flow - throw"),
+                ["yield"] = registry.GetClassificationType("control flow - yield"),
 			};
 			_lineStartRegex = new Regex($@"^\s*({string.Join("|", _modifierMap.Keys)}|\[)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-		}
+        }
 
 		public IEnumerable<ITagSpan<ClassificationTag>> GetTags(NormalizedSnapshotSpanCollection spans)
 		{

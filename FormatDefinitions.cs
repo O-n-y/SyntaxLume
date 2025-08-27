@@ -139,3 +139,198 @@ internal sealed class StaticModifierFormat : ClassificationFormatDefinition
 		ForegroundColor = Colors.Gray;
 	}
 }
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - if")]
+[Name("Control Flow If Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowIfFormat : ClassificationFormatDefinition
+{
+    public ControlFlowIfFormat()
+    {
+        DisplayName = "C# Control Flow - if";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - else")]
+[Name("Control Flow Else Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowElseFormat : ClassificationFormatDefinition
+{
+    public ControlFlowElseFormat()
+    {
+        DisplayName = "C# Control Flow - else";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - while")]
+[Name("Control Flow While Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowWhileFormat : ClassificationFormatDefinition
+{
+    public ControlFlowWhileFormat()
+    {
+        DisplayName = "C# Control Flow - while";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - do")]
+[Name("Control Flow Do Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowDoFormat : ClassificationFormatDefinition
+{
+    public ControlFlowDoFormat()
+    {
+        DisplayName = "C# Control Flow - do";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - for")]
+[Name("Control Flow For Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowForFormat : ClassificationFormatDefinition
+{
+    public ControlFlowForFormat()
+    {
+        DisplayName = "C# Control Flow - for";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - foreach")]
+[Name("Control Flow Foreach Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowForeachFormat : ClassificationFormatDefinition
+{
+    public ControlFlowForeachFormat()
+    {
+        DisplayName = "C# Control Flow - foreach";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - switch")]
+[Name("Control Flow Switch Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowSwitchFormat : ClassificationFormatDefinition
+{
+    public ControlFlowSwitchFormat()
+    {
+        DisplayName = "C# Control Flow - switch";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - break")]
+[Name("Control Flow Break Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowBreakFormat : ClassificationFormatDefinition
+{
+    public ControlFlowBreakFormat()
+    {
+        DisplayName = "C# Control Flow - break";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - continue")]
+[Name("Control Flow Continue Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowContinueFormat : ClassificationFormatDefinition
+{
+    public ControlFlowContinueFormat()
+    {
+        DisplayName = "C# Control Flow - continue";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - return")]
+[Name("Control Flow Return Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowReturnFormat : ClassificationFormatDefinition
+{
+    public ControlFlowReturnFormat()
+    {
+        DisplayName = "C# Control Flow - return";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - goto")]
+[Name("Control Flow Goto Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowGotoFormat : ClassificationFormatDefinition
+{
+    public ControlFlowGotoFormat()
+    {
+        DisplayName = "C# Control Flow - goto";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - throw")]
+[Name("Control Flow Throw Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowThrowFormat : ClassificationFormatDefinition
+{
+    public ControlFlowThrowFormat()
+    {
+        DisplayName = "C# Control Flow - throw";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
+
+[Export(typeof(EditorFormatDefinition))]
+[ClassificationType(ClassificationTypeNames = "control flow - yield")]
+[Name("Control Flow Yield Format")]
+[UserVisible(true)]
+[Priority(9999)]
+[Order(After = Priority.High)]
+internal sealed class ControlFlowYieldFormat : ClassificationFormatDefinition
+{
+    public ControlFlowYieldFormat()
+    {
+        DisplayName = "C# Control Flow - yield";
+        ForegroundColor = Colors.OrangeRed;
+    }
+}
